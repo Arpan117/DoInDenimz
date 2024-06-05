@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOIN'DENIMZ | Login</title>
+    <link rel="fevicon icon" href="../img/doindenimz_fevicon.png" type="image/x-icon">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container_login">
+        <div class="container_main_login">
+            <div class="container_main_login_logo">
+                <img src="../img/nav_logo2.png">
+            </div>
+            <div class="login_header">
+                <h2>Login</h2>
+                <p>Please login to access your saved sizes if you’ve
+                    shopped Online or In Store with us.</p>
+            </div>
+
+            <form id="loginForm" class="form form_login" action="#" method="post" onsubmit="return validateForm()">
+                <label for="loginemail" class="form_login_label">Email</label>
+                <br>
+                <span id="loginErroremail" style="color:red; width:50%; font-size:small;"></span>
+                <div class="form_login_input">
+                    <input type="email" id="loginemail" name="loginemail" placeholder="Enter your Email"
+                        oninput="validateName()">
+                </div>
+
+                <label for="loginpassword" class="form_login_label">Password</label>
+                <div class="form_login_pass_input">
+                    <div class="input-container">
+                        <input type="password" id="loginPassword" name="loginpassword" placeholder="Enter your Password"
+                            oninput="validateEmail()">
+                        <i class="fa-solid fa-eye-slash" id="passeyeicon"></i>
+                    </div>
+                </div>
+
+                <div class="login_forgot_pass_div">
+                    <a href="emailLogin.html" class="login_forgot_pass">
+                        Forgot Password ?
+                    </a>
+                </div>
+                <div class="login_submit_button_div">
+                    <a href="../index.html">
+                        <button type="submit" id="loginSubmit" class="submit">Login Account </button>
+                        <!-- <span></span> -->
+                    </a>
+                </div>
+            </form>
+
+            <div class="footer">
+                <p>Not registered yet? <a href="signin.html">Create an Account</a></p>
+            </div>
+
+        </div>
+
+        <div class="side">
+            <div class="side_logo">
+                <img src="../img/nav_logo2.png" alt="logo">
+            </div>
+            <div class="side_img">
+                <img src="../img/login_side2.png" alt="side img">
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="" async defer></script>
+    <script>
+        $(document).ready(function () {
+
+            //start email validation
+            $("#loginemail").keydown("input", function () {
+                if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($(this).val())) {
+                    $("#loginErroremail").text("");
+                } else {
+                    $("#loginErroremail").text("Please enter a valid email address.");
+                }
+            });
+            //end email validation
+
+            //start password show validation
+            $("#passeyeicon").click(function () {
+                let loginpassword = $("#loginPassword");
+                if (loginpassword.attr("type") === "password") {
+                    loginpassword.attr("type", "text");
+                    $(this).removeClass("fa-eye-slash").addClass("fa-eye");
+                } else {
+                    loginpassword.attr("type", "password");
+                    $(this).removeClass("fa-eye").addClass("fa-eye-slash");
+                }
+            });
+            //end password show validation
+
+            // Form submission
+            $('#loginSubmit').click(function (e) {
+                e.preventDefault(); // Prevent default form submission
+
+                // Your validation logic here
+
+                // If validation passes, redirect to index.html
+                window.location.href = '../index.html';
+            });
+
+            //---------------start login form data local storage----------
+            let loginform = document.getElementById("loginForm");
+            document.getElementById("loginSubmit").addEventListener("click", (event) => {
+                event.preventDefault();
+
+                let loginemail = loginform.loginemail.value;
+                let loginpassword = loginform.loginpassword.value;
+                
+                var loginformdata = JSON.parse(localStorage.getItem("loginformDetails")) ?? [];
+                loginformdata.push({
+                    'Email':loginemail,
+                    'Password':loginpassword
+                });
+                localStorage.setItem("loginformDetails",JSON.stringify(loginformdata))
+            });
+            //---------------end login form data local storage----------
+        });
+
+
+    </script>
+</body>
+
+</html>

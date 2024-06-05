@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOIN'DENIMZ | OTP Verification</title>
+    <link rel="fevicon icon" href="../img/doindenimz_fevicon.png" type="image/x-icon">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container_login">
+        <div class="container_main_login">
+            <div class="container_main_login_logo">
+                <img src="../img/nav_logo2.png">
+            </div>
+            <div class="login_header">
+                <h2>OTP Verification</h2>
+                <p>Enter the OTP sent to <span> Geography.jeans@gmail.com </span></p>
+            </div>
+
+            <form id="otpVerificationForm" class=" form form_login" action="#" method="post" onsubmit="return">
+                <div class="otp_form_div">
+                    <input class="otp_condition_checkbox" type="text" name="firstotpverification" data-index="1">
+                    <input class="otp_condition_checkbox" type="text" name="secondotpverification" data-index="2"
+                        disabled>
+                    <input class="otp_condition_checkbox" type="text" name="thiredotpverification" data-index="3"
+                        disabled>
+                    <input class="otp_condition_checkbox" type="text" name="fourthotpverification" data-index="4"
+                        disabled>
+                </div>
+            </form>
+
+            <div class="login_submit_button_div">
+                <a href="createNewPassword.html">
+                    <button type="submit" id="submitOtp" class="submitOtp">Verify OTP</button> <!-- <span></span> -->
+                </a>
+            </div>
+
+
+            <div class="footer">
+                <p>Don't receive the OTP? <a>Resend OTP</a></p>
+                <br>
+                <p>Resend OTP ( <span id="otpTimer">60</span> s)</p>
+            </div>
+
+        </div>
+
+        <div class="side">
+            <div class="side_logo">
+                <img src="../img/nav_logo2.png" alt="logo">
+            </div>
+            <div class="side_img">
+                <img src="../img/login_side2.png">
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="" async defer></script>
+    <script>
+
+        $(document).ready(function () {
+            // strat otp validation in 1 character type and auto move next box
+            const inputs = $("input");
+            const button = $("button");
+
+            inputs.each(function (index1) {
+                $(this).on("keyup", function (e) {
+                    const currentInput = $(this);
+                    const nextInput = $(this).next("input");
+                    const prevInput = $(this).prev("input");
+
+                    if (currentInput.val().length > 1) {
+                        currentInput.val("");
+                        return;
+                    }
+
+                    if (nextInput.length && nextInput.prop("disabled") && currentInput.val() !== "") {
+                        nextInput.removeAttr("disabled");
+                        nextInput.focus();
+                    }
+
+                    if (e.key === "Backspace") {
+                        inputs.each(function (index2) {
+                            if (index1 <= index2 && prevInput.length) {
+                                $(this).prop("disabled", true);
+                                currentInput.val("");
+                                prevInput.focus();
+                            }
+                        });
+                    }
+
+                    if (!inputs.eq(3).prop("disabled") && inputs.eq(3).val() !== "") {
+                        button.addClass("activeotp");
+                        return;
+                    }
+
+                    button.addClass("activeotp");
+                });
+            });
+
+            $(window).on("load", function () {
+                inputs.eq(0).focus();
+            });
+            // end otp validation in 1 character type and auto move next box
+
+
+            // start resend otp in 1min. to 0second timer (Countdown function)
+            function countdown() {
+                var timerElement = $('#otpTimer');
+                var count = parseInt(timerElement.text());
+
+                if (count > 0) {
+                    count--;
+                    timerElement.text(count);
+                } else {
+                    clearInterval(intervalId); // Stop the countdown when it reaches 0
+                    // Optionally, update the text or perform any other action when the countdown ends
+                    timerElement.text("0"); // Optionally reset to "0" or any other value
+                }
+            }
+            // Initial call to start the countdown
+            var intervalId = setInterval(countdown, 1000); // Update every second
+            // end resend otp in 1min. to 0second timer (Countdown function)
+
+
+
+            // ========start createNewPassword.html page move for Verify otp button
+            $("#submitOtp").on("click", function (event) {
+                event.preventDefault(); // Prevent the default action of the button click
+
+                // Your OTP verification code...
+                let otp = document.querySelector('input[name="firstotpverification"]').value;
+                let otpsecond = document.querySelector('input[name="secondotpverification"]').value;
+                let otpthired = document.querySelector('input[name="thiredotpverification"]').value;
+                let otpfourth = document.querySelector('input[name="fourthotpverification"]').value;
+
+                let concatenatedOTP = otp + otpsecond + otpthired + otpfourth;
+
+                // Check if OTP verification is successful (you need to implement this logic)
+                let isVerified = true; // For demonstration purposes, assuming OTP verification is successful
+
+                if (isVerified) {
+                    // Redirect to createNewPassword.html
+                    window.location.href = "createNewPassword.html";
+                }
+            });
+            // ========end createNewPassword.html page move for Verify otp button
+
+
+
+
+            //---------------start profile payment card popup form data local storage----------
+            let otpverificationform = document.getElementById("otpVerificationForm");
+            document.getElementById("submitOtp").addEventListener("click", (event) => {
+                event.preventDefault();
+
+                let otp = document.querySelector('input[name="firstotpverification"]').value;
+                let otpsecond = document.querySelector('input[name="secondotpverification"]').value;
+                let otpthired = document.querySelector('input[name="thiredotpverification"]').value;
+                let otpfourth = document.querySelector('input[name="fourthotpverification"]').value;
+
+                let concatenatedOTP = otp + otpsecond + otpthired + otpfourth;
+
+                let otpverificationformdata = JSON.parse(localStorage.getItem("otpformDetails")) || [];
+                otpverificationformdata.push({
+                    'OTP': concatenatedOTP
+                });
+                localStorage.setItem("otpformDetails", JSON.stringify(otpverificationformdata));
+
+            });
+            //---------------end profile payment card popup form data local storage----------
+
+        });
+    </script>
+
+
+</body>
+
+</html>

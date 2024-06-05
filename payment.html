@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOIN'DENIMZ | PAYMENT</title>
+    <link rel="fevicon icon" href="./img/doindenimz_fevicon.png" type="image/x-icon">
+
+    <!-- Meta Tags - Description for Search Engine purposes -->
+    <meta name="description" content="Georapi creaction, jeans, Jeans pant">
+    <meta name="keywords" content="Jeans pant, jeans pant, Georapi creaction, georapi creation">
+
+    <!-- inter fonts online links from google-font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <div>
+        <div class="test">
+            <input type="checkbox" class="menu-toggle" id="menu-toggle">
+            <div class="mobile-bar">
+                <label for="menu-toggle" class="menu-icon">
+                    <span></span>
+                </label>
+            </div>
+
+            <header class="header">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="customeJeans.html">Custome Jeans</a></li>
+                        <li><a href="productPage.html">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="measurementGuide.html">Measurement Guide</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <div class="header_icons2">
+                            <a href="#" id="searchIcon"><img src="img/search_icon.png" alt="search icon"></a>
+                            <a href="profilePersonal.html"><img src="img/user_icon.png" alt="user icon"></a>
+                            <li class="active"><a href="cart.html"><img src="img/shopping-cart_icon.png" alt="shopping cart icon"></a></li>
+                        </div>
+                        <div id="searchContainer" class="search_container">
+                            <input type="text" id="searchInput" class="search_input" placeholder="Search">
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="header_icons">
+                <div class="search_header">
+                    <input type="text" id="search_input" placeholder="Search">
+                    <a href="#" id="search_icon"><img src="img/search_icon.png" alt="Search icon"></a>
+               </div>
+                <a href="profilePersonal.html"><img src="img/user_icon.png" alt="user icon"></a>
+                <a href="cart.html"><img src="img/shopping-cart_icon.png" alt="shopping cart icon"></a>
+            </div>
+
+            <a class="navbar-brand" href="index.html">
+                <img class="header_logo_long" src="img/Doin'Denimz_logo.png" alt="logo">
+                <img class="header_logo_small" src="img/mo_nav_logo.png" alt="logo">
+            </a>
+
+        </div>
+    </div>
+
+    <!-- end header -->
+
+    <main>
+        <div id="content">
+            <div class="checkout">
+                <div class="checkout_main">
+                    <div class="checkout1">
+                        <div class="checkout_progress_main">
+                            <div class="checkout_progress">
+                                <div class="checkout_progress_num"><img src="./img/true1.png"></div>
+                                <div class="checkout_progress_text">Delivery</div>
+                            </div>
+                            <div class="step_check"></div>
+                            <div class="checkout_progress">
+                                <div class="checkout_progress_num checkout_progress_num_fill">2</div>
+                                <div class="checkout_progress_text">Payment</div>
+                            </div>
+                            <div class="step_check"></div>
+                            <div class="checkout_progress">
+                                <div class="checkout_progress_num">3</div>
+                                <div class="checkout_progress_text">Confirmation</div>
+                            </div>
+                        </div>
+
+
+                        <!-- Start Payment Method Section  -->
+
+                        <!-- <form id="paymentForm" action="" method="post"> -->
+                        <div class="checkout_delivery">
+                            <div class="checkout_delivery_title">
+                                <h4>Payment Method</h4>
+                            </div>
+                            <div class="checkout_delivery_shipping">
+                                <div class="payment_box">
+                                    <div class="delivery_shipping_box_text">
+                                        <input type="radio" name="paymentMethod">
+                                        <label><img src="./img/paypal.png" alt="paypal"></label>
+                                        <p class="payment_box_p">Paypal</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkout_delivery_shipping" id="creditCardOption">
+                                <div class="payment_box">
+                                    <div class="delivery_shipping_box_text">
+                                        <input type="radio" id="radioBtn1" name="paymentMethod"
+                                            onclick="toggleSection(1)">
+                                        <p class="payment_box_p">Credit Card And Other Payment Options</p>
+                                    </div>
+                                </div>
+
+
+                                <!-- Start Credit card section -->
+
+                                <div class="none" id="section1">
+                                    <div class="checkout_delivery_shipping">
+                                        <div class="payment_box">
+                                            <div class="delivery_shipping_box_text">
+                                                <input type="radio" name="paymentMethodCard">
+                                                <label><img src="./img/creditCard.png" alt="paypal"></label>
+                                                <p class="payment_box_p">Credit Card</p>
+                                            </div>
+                                        </div>
+                                        <div class="creditcard">
+                                            <div class="creditcard_div">
+                                                <p>Name</p>
+                                                <h4>Michelle M. Benfer</h4>
+                                            </div>
+                                            <div class="creditcard_div">
+                                                <p>Card number</p>
+                                                <h4>8888 **** **** 5555</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Start Add New Card Section -->
+                                    <div class="checkout_delivery_shipping">
+                                        <div class="payment_box">
+                                            <div class="delivery_shipping_box_text">
+                                                <input type="radio" name="paymentMethodCard" onclick="toggleSection(2)">
+                                                <p class="payment_box_p">Add a New Card</p>
+                                            </div>
+                                        </div>
+
+                                        <form id="paymentNewCardForm" action="" method="post">
+                                            <div class="none" id="section2">
+                                                <div class="checkout_delivery_name_title">
+                                                    <hr>
+                                                </div>
+                                                <div class="checkout_delivery_name">
+                                                    <div class="delivery_name_main">
+                                                        <label class="label_name">Name on card*</label>
+                                                        <span id="paymentCardnameError"
+                                                            style="color:red; font-size:small;"></span>
+                                                        <div>
+                                                            <input type="text" id="paymentCardname"
+                                                                name="paymentCardname"
+                                                                placeholder="Enter your Card Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="delivery_name_main">
+                                                        <label class="label_name">Card number*</label>
+                                                        <span id="paymentCardnumberError"
+                                                            style="color:red; font-size:small;"></span>
+                                                        <div>
+                                                            <input type="text" id="paymentCardnumber"
+                                                                name="paymentCardnumber"
+                                                                placeholder="Enter your Card Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="delivery_name_main">
+                                                        <label>Expiry date*</label>
+                                                        <span id="paymentCardexpiryError"
+                                                            style="color:red; font-size:small;"></span>
+                                                        <div>
+                                                            <input type="text" id="paymentCardexpiry"
+                                                                name="paymentCardexpiry"
+                                                                placeholder="Enter your Expiry date">
+                                                        </div>
+                                                    </div>
+                                                    <div class="delivery_name_main">
+                                                        <label>CVC / CVV*</label>
+                                                        <span id="paymentCardcvcError"
+                                                            style="color:red; font-size:small;"></span>
+                                                        <div>
+                                                            <input type="text" id="paymentCardcvc" name="paymentCardcvc"
+                                                                placeholder="Enter your CVC">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="payment_delivery_AddCard">
+                                                    <button id="paymentAddCard">Save</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <!-- End Add New Card Section -->
+                                    <div class="checkout_delivery_shipping">
+                                        <div class="payment_box">
+                                            <div class="delivery_shipping_box_text">
+                                                <input type="radio" name="paymentMethodCard">
+                                                <label><img src="./img/gpay.png" alt="paypal"></label>
+                                                <p class="payment_box_p">Google Pay</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- End Credit card section -->
+
+                            </div>
+                        </div>
+
+                        <!-- End Payment Method Section -->
+
+                        <!-- Start Billing Address Section -->
+                        <div class="checkout_delivery">
+                            <div class="checkout_delivery_title">
+                                <h4>Billing Address</h4>
+                            </div>
+                            <div class="checkout_delivery_shipping">
+                                <div class="payment_box">
+                                    <div class="payment_box_address">
+                                        <input type="radio" name="PaymentAddress">
+                                        <div class="payment_box_address_main">
+                                            <div>
+                                                <h4>Same as Delivery Address</h4>
+                                            </div>
+                                            <div>
+                                                <p class="payment_box_p_name">Name:- Michelle M. Benfer</p>
+                                                <p class="payment_box_p">Address:- 3971 Beechwood Avenue Anglesey</p>
+                                                <p class="payment_box_p">Belleville, United Kingdom</p>
+                                                <p class="payment_box_p">07109</p>
+                                                <p class="payment_box_p_name">Mo.:- 908-836-9331</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Start Add New Address Section -->
+                            <div class="checkout_delivery_shipping">
+                                <div class="payment_box">
+                                    <div class="payment_box_address">
+                                        <input type="radio" name="PaymentAddress" onclick="toggleSection(3)">
+                                        <div>
+                                            <h4>Add a New Address</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form id="paymentNewAddressForm" action="" method="post">
+                                    <div class="none" id="section3">
+                                        <div class="checkout_delivery">
+                                            <div class="checkout_delivery_name_title">
+                                                <hr>
+                                                <h4 style="margin-top: 10px;">Enter Your Details</h4>
+                                            </div>
+                                            <div class="checkout_delivery_name">
+                                                <div class="delivery_name_main">
+                                                    <label class="label_name" for="paymentFname">First Name*</label>
+                                                    <span id="paymentAddressNameError"
+                                                        style="color:red; font-size:small;"></span>
+                                                    <div>
+                                                        <input type="text" id="paymentAddressName"
+                                                            name="paymentAddressName" placeholder="Enter your name">
+                                                    </div>
+                                                </div>
+                                                <div class="delivery_name_main">
+                                                    <label class="label_name">Last Name*</label>
+                                                    <span id="paymentAddressLnameError"
+                                                        style="color:red; font-size:small;"></span>
+                                                    <div>
+                                                        <input type="text" id="paymentAddressLname"
+                                                            name="paymentAddressLname" placeholder="Enter your name">
+                                                    </div>
+                                                </div>
+                                                <div class="delivery_name_main">
+                                                    <label>Email*</label>
+                                                    <span id="paymentAddressEmailError"
+                                                        style="color:red; font-size:small;"></span>
+                                                    <div>
+                                                        <input type="email" id="paymentAddressEmail"
+                                                            name="paymentAddressEmail" placeholder="Enter your Email">
+                                                    </div>
+                                                </div>
+                                                <div class="delivery_name_main">
+                                                    <label>Mobile Phone*</label>
+                                                    <span id="paymentAddressMonoError"
+                                                        style="color:red; font-size:small;"></span>
+                                                    <div>
+                                                        <input type="text" id="paymentAddressMono"
+                                                            name="paymentAddressMono" placeholder="Enter your Mo. No.">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="checkout_delivery">
+                                            <div class="checkout_delivery_name_title">
+                                                <h4>Enter Your Address</h4>
+                                            </div>
+
+                                            <div class="checkout_delivery_name">
+                                                <div class="delivery_name_main_address">
+                                                    <label>Address*</label>
+                                                    <span id="paymentAddressaddError"
+                                                        style="color:red; font-size:small;"></span>
+                                                    <div>
+                                                        <input type="text" id="paymentAddressadd"
+                                                            name="paymentAddressadd" placeholder="Enter your Address">
+                                                    </div>
+                                                </div>
+                                                <div class="delivery_name_main">
+                                                    <label>Town / City*</label>
+                                                    <span id="paymentAddressCityError"
+                                                        style="color:red; font-size:small;"></span>
+                                                    <div>
+                                                        <input type="text" id="paymentAddressCity"
+                                                            name="paymentAddressCity"
+                                                            placeholder="Enter your Town / City">
+                                                    </div>
+                                                </div>
+                                                <div class="delivery_name_main">
+                                                    <label>Region / Country*</label>
+                                                    <span id="paymentAddressRegionError"
+                                                        style="color:red; font-size:small;"></span>
+                                                    <div>
+                                                        <input type="text" id="paymentAddressRegion"
+                                                            name="paymentAddressRegion"
+                                                            placeholder="Enter your Region / Country">
+                                                    </div>
+                                                </div>
+                                                <div class="delivery_name_main">
+                                                    <label>Postcode*</label>
+                                                    <span id="paymentAddressPostcodeError"
+                                                        style="color:red; font-size:small;"></span>
+                                                    <div>
+                                                        <input type="text" id="paymentAddressPostcode"
+                                                            name="paymentAddressPostcode"
+                                                            placeholder="Enter your Postcode">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="payment_delivery_AddAddress">
+                                            <button id="paymentAddAddress">Save</button>
+                                        </div>
+
+
+
+                                        <div class="checkout_terms">
+                                            <input type="checkbox" class="checkout_terms_checkbox" id="checkoutCheckbox"
+                                                name="paymentConditionCheckbox">
+                                            <p>I have read and understand the <span>Terms & Conditions</span> and
+                                                <span>Privacy
+                                                    Policy*</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </form>
+
+
+                            </div>
+                            <!-- End Add New Address Section -->
+                        </div>
+                        <!-- </form> -->
+
+                        <!-- End Billing Address Section -->
+                    </div>
+
+
+                    <div class="checkout2">
+                        <div class="checkout2_title">
+                            <h4>Order Summary <span>(03)</span></h4>
+                        </div>
+
+                        <div class="checkout_summary_table">
+                            <div class="checkout_table_product">
+                                <div class="checkout_table_product_img">
+                                    <img src="./img/pant11.png" alt="product">
+                                </div>
+                                <div class="checkout_table_product_details">
+                                    <p>Nicky Boyfriend Fit Low-Rise Jeans</p>
+                                    <p class="checkout_table_product_details_p2">Blue</p>
+                                    <div class="checkout_table_product">
+                                        <div class="checkout_table_product_price">
+                                            <p>Rs. 2,990</p>
+                                            <p>Rs. 3,990</p>
+                                            <span>-40%</span>
+                                        </div>
+                                        <div class="checkout_table_product_discount">
+                                            <button>Edit item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="checkout_table_product">
+                                <div class="checkout_table_product_img">
+                                    <img src="./img/pant7.png" alt="product">
+                                </div>
+                                <div class="checkout_table_product_details">
+                                    <p>Nicky Boyfriend Fit Low-Rise Jeans</p>
+                                    <p class="checkout_table_product_details_p2">Blue</p>
+                                    <div class="checkout_table_product">
+                                        <div class="checkout_table_product_price">
+                                            <p>Rs. 2,990</p>
+                                            <p>Rs. 3,990</p>
+                                            <span>-40%</span>
+                                        </div>
+                                        <div class="checkout_table_product_discount">
+                                            <button>Edit item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="checkout_table_product">
+                                <div class="checkout_table_product_img">
+                                    <img src="./img/pant16.png" alt="product">
+                                </div>
+                                <div class="checkout_table_product_details">
+                                    <p>Nicky Boyfriend Fit Low-Rise Jeans</p>
+                                    <p class="checkout_table_product_details_p2">Blue</p>
+                                    <div class="checkout_table_product">
+                                        <div class="checkout_table_product_price">
+                                            <p>Rs. 2,990</p>
+                                            <p>Rs. 3,990</p>
+                                            <span>-40%</span>
+                                        </div>
+                                        <div class="checkout_table_product_discount">
+                                            <button>Edit item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="promo_code">
+                            <div class="cart_details_total">
+                                <div class="cart_product_total">
+                                    <h4>Subtotal: </h4>
+                                    <h4>Rs.2,990</h4>
+                                </div>
+                                <div class="cart_product_total_shipping">
+                                    <h4>Standard Shipping: </h4>
+                                    <h4>FREE</h4>
+                                </div>
+                                <hr>
+                                <div class="cart_product_total">
+                                    <h4>Total(vat. included): </h4>
+                                    <h4>Rs.2,990</h4>
+                                </div>
+                                <div class="cart_product_total_button">
+                                    <a href="confirmation.html">
+                                        <button id="paymentProceesButton">Proceed To Checkout</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="top_footer">
+            <div class="top_footer1">Customize your lifestyle</div>
+            <div class="top_footer2">
+                <div class="top_footer21">
+                    <img src="img/call.png" alt="call icon">
+                    <p>Or contact us On +91 96380 14309
+                    </p>
+                </div>
+                <div class="top_footer22">
+                    <a href="#" class="footer_btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid_footer">
+            <div class="mid_footer1">
+                <a href="index.html">
+                    <img src="img/Doin'Denimz_logo.png" alt="">
+                </a>
+                <p>
+                    Explore our diverse jeans collection, tailored to suit your lifestyle. Elevate your wardrobe with
+                    premium quality denim and make a statement. Customize your style today.
+                </p>
+                <div class="footer_icons">
+                    <div class="facebook">
+                        <a href="#" class="fa-brands fa-facebook-f"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#" class="fa-brands fa-twitter"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#" class="fa-brands fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mid_footer2">
+                <div class="mid_footer21">
+                    <ul>
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>MEN's STORE</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Jeans</a></li>
+                    </ul>
+                    <ul>
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>WOMEN's STORE</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Jeans</a></li>
+                    </ul>
+                </div>
+                <div class="mid_footer21">
+                    <ul>
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>COMPANY</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Perfect Fit Guarantee</a></li>
+                        <li><a href="#">Georapi Blog</a></li>
+                    </ul>
+                    <ul>
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>Support</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="contactUs.html">Contact us</a></li>
+                        <li><a href="#">Order fabric samples</a></li>
+                        <li><a href="#">Track order</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="last_footer">
+            <div class="last_footer_copy">
+                <p>© 2020 My Doin`Denimz Creation. all rights reserved.2021</p>
+            </div>
+            <div class="last_footer_privacy">
+                <a href="#">Privacy Policy</a>
+                <p> | </p>
+                <a href="#"> Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end footer -->
+
+
+    <script src="./js/script.js"></script>
+    <script>
+
+        //==================== Start Add new Address Section ====================
+        // Function to validate Name on Card
+        function validateCardName() {
+            var cardName = document.getElementById("paymentCardname").value;
+            var nameRegex = /^[a-zA-Z ]+$/; // Only allows uppercase and lowercase letters and space
+
+            if (cardName.trim() === "") {
+                document.getElementById("paymentCardnameError").innerText = "Name on Card is required";
+            } else if (!nameRegex.test(cardName)) {
+                document.getElementById("paymentCardnameError").innerText = "Only for Alphabet is allowed";
+            } else {
+                document.getElementById("paymentCardnameError").innerText = "";
+            }
+        }
+
+        // Function to validate Card Number and add space every 4 digits
+        function validateCardNumber() {
+            var cardNumber = document.getElementById("paymentCardnumber").value.replace(/\s/g, ''); // Remove existing spaces
+            var formattedCardNumber = cardNumber.replace(/(\d{4})(?=\d)/g, '$1 '); // Add space every 4 digits
+            var cardNumberRegex = /^\d{16}$/; // 16-digit card number
+
+            if (cardNumber.trim() === "") {
+                document.getElementById("paymentCardnumberError").innerText = "Card Number is required";
+            } else if (!cardNumberRegex.test(cardNumber)) {
+                document.getElementById("paymentCardnumberError").innerText = "Card Number must be 16 digits";
+            } else {
+                document.getElementById("paymentCardnumber").value = formattedCardNumber; // Update input with formatted value
+                document.getElementById("paymentCardnumberError").innerText = "";
+            }
+        }
+
+        // Function to validate Expiry Date on Card
+        function validateExpiryDate() {
+            var expiryDate = document.getElementById("paymentCardexpiry").value;
+            var expiryRegex = /^(0[1-9]|1[0-2])\/[0-9]{2}$/; // Format: MM/YY
+
+            if (expiryDate.trim() === "") {
+                document.getElementById("paymentCardexpiryError").innerText = "Expiry Date is required";
+            } else if (!expiryRegex.test(expiryDate)) {
+                document.getElementById("paymentCardexpiryError").innerText = "Invalid Expiry Date format (MM/YY)";
+            } else {
+                document.getElementById("paymentCardexpiryError").innerText = "";
+            }
+        }
+
+        // Function to validate CVC/CVV on Card
+        function validateCVC() {
+            var cvc = document.getElementById("paymentCardcvc").value;
+            var cvcRegex = /^\d{3}$/; // 3-digit CVC/CVV
+
+            if (cvc.trim() === "") {
+                document.getElementById("paymentCardcvcError").innerText = "CVC/CVV is required";
+            } else if (!cvcRegex.test(cvc)) {
+                document.getElementById("paymentCardcvcError").innerText = "CVC/CVV must be 3 digits";
+            } else {
+                document.getElementById("paymentCardcvcError").innerText = "";
+            }
+        }
+
+
+        // Attach input event listeners to respective fields
+        document.getElementById("paymentCardname").addEventListener("input", validateCardName);
+        document.getElementById("paymentCardnumber").addEventListener("input", validateCardNumber);
+        document.getElementById("paymentCardexpiry").addEventListener("input", validateExpiryDate);
+        document.getElementById("paymentCardcvc").addEventListener("input", validateCVC);
+
+
+        // Attach click event listener to the "Proceed To Checkout" button
+        document.getElementById("paymentAddCard").addEventListener("click", function (event) {
+            // Validate fields
+            validateCardName();
+            validateCardNumber();
+            validateExpiryDate();
+            validateCVC();
+
+            // Prevent form submission if any field is empty or contains errors
+            if (document.getElementById("paymentCardnameError").innerText !== "" ||
+                document.getElementById("paymentCardnumberError").innerText !== "" ||
+                document.getElementById("paymentCardexpiryError").innerText !== "" ||
+                document.getElementById("paymentCardcvcError").innerText !== "") {
+                event.preventDefault();
+            }
+        });
+
+
+
+        //==================== End Add new Card Section ====================
+
+
+
+
+        //==================== Start Add new Address Section ====================
+
+        // Function to validate first name field on Add new address
+        function validateFirstName() {
+            var firstName = document.getElementById("paymentAddressName").value;
+            var nameRegex = /^[a-zA-Z]+$/; // Regular expression to match only uppercase and lowercase letters
+
+            if (firstName.trim() === "") {
+                document.getElementById("paymentAddressNameError").innerText = "First Name is required";
+                return;
+            }
+
+            if (!nameRegex.test(firstName)) {
+                document.getElementById("paymentAddressNameError").innerText = "Only alphabets allowed";
+                return;
+            }
+
+            document.getElementById("paymentAddressNameError").innerText = "";
+        }
+
+        // Function to validate last name field on Add new address
+        function validateLastName() {
+            var lastName = document.getElementById("paymentAddressLname").value;
+            var nameRegex = /^[a-zA-Z]+$/; // Regular expression to match only uppercase and lowercase letters
+
+            if (lastName.trim() === "") {
+                document.getElementById("paymentAddressLnameError").innerText = "Last Name is required";
+                return;
+            }
+
+            if (!nameRegex.test(lastName)) {
+                document.getElementById("paymentAddressLnameError").innerText = "Only alphabets allowed";
+                return;
+            }
+
+            document.getElementById("paymentAddressLnameError").innerText = "";
+        }
+
+        // Function to validate email field on Add new address
+        function validateEmail() {
+            var email = document.getElementById("paymentAddressEmail").value;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailRegex.test(email)) {
+                document.getElementById("paymentAddressEmailError").innerText = "Please enter a valid email address";
+            } else {
+                document.getElementById("paymentAddressEmailError").innerText = "";
+            }
+        }
+
+        // Function to validate mobile phone field on Add new address
+        function validateMobilePhone() {
+            var mobilePhone = document.getElementById("paymentAddressMono").value;
+
+            if (mobilePhone.trim() === "") {
+                document.getElementById("paymentAddressMonoError").innerText = "Mobile number is required";
+                return;
+            }
+
+            var phoneRegex = /^\d{10}$/;
+            if (!phoneRegex.test(mobilePhone)) {
+                document.getElementById("paymentAddressMonoError").innerText = "Please enter a valid 10-digit mobile phone number";
+            } else {
+                document.getElementById("paymentAddressMonoError").innerText = "";
+            }
+        }
+
+        // Function to validate address field on Add new address
+        function validateAddress() {
+            var address = document.getElementById("paymentAddressadd").value;
+            if (address.trim() === "") {
+                document.getElementById("paymentAddressaddError").innerText = "Address is required";
+            } else {
+                document.getElementById("paymentAddressaddError").innerText = "";
+            }
+        }
+
+
+        // Function to validate city field on Add new address
+        function validateCity() {
+            var city = document.getElementById("paymentAddressCity").value;
+            if (city.trim() === "") {
+                document.getElementById("paymentAddressCityError").innerText = "Town / City is required";
+            } else {
+                document.getElementById("paymentAddressCityError").innerText = "";
+            }
+        }
+
+        // Function to validate region/country field on Add new address
+        function validateRegion() {
+            var region = document.getElementById("paymentAddressRegion").value;
+            if (region.trim() === "") {
+                document.getElementById("paymentAddressRegionError").innerText = "Region / Country is required";
+            } else {
+                document.getElementById("paymentAddressRegionError").innerText = "";
+            }
+        }
+
+        // Function to validate postcode field on Add new address
+        function validatePostcode() {
+            var postcode = document.getElementById("paymentAddressPostcode").value;
+
+            if (postcode.trim() === "") {
+                document.getElementById("paymentAddressPostcodeError").innerText = "Postcode is required";
+                return;
+            }
+
+            if (!/^\d+$/.test(postcode)) {
+                document.getElementById("paymentAddressPostcodeError").innerText = "Only numbers allowed";
+            } else {
+                document.getElementById("paymentAddressPostcodeError").innerText = "";
+            }
+        }
+
+
+        // Attach input event listeners to respective fields
+        document.getElementById("paymentAddressName").addEventListener("input", validateFirstName);
+        document.getElementById("paymentAddressLname").addEventListener("input", validateLastName);
+        document.getElementById("paymentAddressEmail").addEventListener("input", validateEmail);
+        document.getElementById("paymentAddressMono").addEventListener("input", validateMobilePhone);
+        document.getElementById("paymentAddressadd").addEventListener("input", validateAddress);
+        document.getElementById("paymentAddressCity").addEventListener("input", validateCity);
+        document.getElementById("paymentAddressRegion").addEventListener("input", validateRegion);
+        document.getElementById("paymentAddressPostcode").addEventListener("input", validatePostcode);
+
+
+        // Attach click event listener to the "Proceed To Checkout" button
+        document.getElementById("paymentAddAddress").addEventListener("click", function (event) {
+            // Validate fields
+            validateFirstName();
+            validateLastName();
+            validateEmail();
+            validateMobilePhone();
+            validateAddress();
+            validateCity();
+            validateRegion();
+            validatePostcode();
+
+            // Prevent form submission if any field is empty or contains errors
+            if (document.getElementById("paymentAddressNameError").innerText !== "" ||
+                document.getElementById("paymentAddressLnameError").innerText !== "" ||
+                document.getElementById("paymentAddressEmailError").innerText !== "" ||
+                document.getElementById("paymentAddressMonoError").innerText !== "" ||
+                document.getElementById("paymentAddressaddError").innerText !== "" ||
+                document.getElementById("paymentAddressCityError").innerText !== "" ||
+                document.getElementById("paymentAddressRegionError").innerText !== "" ||
+                document.getElementById("paymentAddressPostcodeError").innerText !== "") {
+                event.preventDefault();
+            }
+        });
+
+        //==================== End Add new Address Section ====================
+
+
+        // ======================================start Payment form data local storage=================
+        /*  let form = document.getElementById("paymentForm");
+          document.getElementById("paymentProceesButton").addEventListener("click", (event) => {
+              event.preventDefault();
+  
+              let paymentselectmethod = form.paymentMethod.value;
+              let paymentselectmethodcard = form.paymentMethodCard.value;
+              let paymentaddnewcardname = form.paymentCardname.value;
+              let paymentaddnewcardnumber = form.paymentCardnumber.value;
+              let paymentaddnewcardexpiry = form.paymentCardexpiry.value;
+              let paymentaddnewcardcvc = form.paymentCardcvc.value;
+              let paymentAddress = form.PaymentAddress.value;
+              let paymentaddressaddname = form.paymentAddressName.value;
+              let paymentaddressaddlname = form.paymentAddressLname.value;
+              let paymentaddressaddemail = form.paymentAddressEmail.value;
+              let paymentaddressaddmono = form.paymentAddressMono.value;
+              let paymentaddressaddaddress = form.paymentAddressadd.value;
+              let paymentaddressaddcity = form.paymentAddressCity.value;
+              let paymentaddressaddregion = form.paymentAddressRegion.value;
+              let paymentaddressaddpostcode = form.paymentAddressPostcode.value;
+              let paymentaddressaddconditioncheckbox = form.paymentConditionCheckbox.value;
+  
+              var paymentdata = JSON.parse(localStorage.getItem("paymentDetails")) ?? [];
+              paymentdata.push({
+                  'paymentselectmethod': paymentselectmethod,
+                  'paymentselectcard': paymentselectmethodcard,
+                  'newcardname': paymentaddnewcardname,
+                  'newcardnumber': paymentaddnewcardnumber,
+                  'newcardexpiry': paymentaddnewcardexpiry,
+                  'newcardcvc': paymentaddnewcardcvc,
+                  'paymentAddress': paymentAddress,
+                  'addname': paymentaddressaddname,
+                  'addlname': paymentaddressaddlname,
+                  'addemail': paymentaddressaddemail,
+                  'addmono': paymentaddressaddmono,
+                  'addaddress': paymentaddressaddaddress,
+                  'addcity': paymentaddressaddcity,
+                  'addregion': paymentaddressaddregion,
+                  'addpostcode': paymentaddressaddpostcode,
+                  'checkbox': paymentaddressaddconditioncheckbox
+              });
+              localStorage.setItem("paymentDetails", JSON.stringify(paymentdata))
+          });
+          */
+
+        //-----------start Add new card data local storage----------
+        let form = document.getElementById("paymentNewCardForm");
+        document.getElementById("paymentAddCard").addEventListener("click", (event) => {
+            event.preventDefault();
+
+            let addNewpaymentCardname = form.paymentCardname.value;
+            let addNewpaymentCardnumber = form.paymentCardnumber.value;
+            let addNewpaymentCardexpiry = form.paymentCardexpiry.value;
+            let addNewpaymentCardcvc = form.paymentCardcvc.value;
+
+            var addnewcarddata = JSON.parse(localStorage.getItem("addNewCardDetails")) ?? [];
+            addnewcarddata.push({
+                'cardHolderName': addNewpaymentCardname,
+                'cardNumber': addNewpaymentCardnumber,
+                'cardExpiry': addNewpaymentCardexpiry,
+                'cardCVC': addNewpaymentCardcvc
+            });
+            localStorage.setItem("addNewCardDetails", JSON.stringify(addnewcarddata))
+        })
+        //-----------end Add new card data local storage------------
+
+
+
+        //-----------start Add new address data local storage----------
+        let addressform = document.getElementById("paymentNewAddressForm");
+        document.getElementById("paymentAddAddress").addEventListener("click", (event) => {
+            event.preventDefault();
+
+            let addpaymentAddressName = addressform.paymentAddressName.value;
+            let addpaymentAddressLname = addressform.paymentAddressLname.value;
+            let addpaymentAddressEmail = addressform.paymentAddressEmail.value;
+            let addpaymentAddressMono = addressform.paymentAddressMono.value;
+            let addpaymentAddressadd = addressform.paymentAddressadd.value;
+            let addpaymentAddressCity = addressform.paymentAddressCity.value;
+            let addpaymentAddressRegion = addressform.paymentAddressRegion.value;
+            let addpaymentAddressPostcode = addressform.paymentAddressPostcode.value;
+            let addpaymentConditionCheckbox = addressform.paymentConditionCheckbox.value;
+
+            var addnewaddressdata = JSON.parse(localStorage.getItem("addnewaddressDetails")) ?? [];
+            addnewaddressdata.push({
+                'Name': addpaymentAddressName,
+                'LastName': addpaymentAddressLname,
+                'Email': addpaymentAddressEmail,
+                'Mobile No': addpaymentAddressMono,
+                'Address': addpaymentAddressadd,
+                'City': addpaymentAddressCity,
+                'Region': addpaymentAddressRegion,
+                'PostCode': addpaymentAddressPostcode,
+                'Condition': addpaymentConditionCheckbox
+            });
+            localStorage.setItem("addnewaddressDetails", JSON.stringify(addnewaddressdata))
+        });
+
+
+        //-----------start Add new address data local storage----------
+
+        // ======================================end Payment form data local storage=================
+
+
+
+        // Start Search section 
+        document.addEventListener("DOMContentLoaded", function () {
+            var searchInput = document.getElementById("search_input");
+            var searchIcon = document.getElementById("search_icon");
+            var content = document.getElementById("content");
+            var header = document.querySelector('.header'); // Selecting the header element
+
+            searchIcon.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+
+                // Toggle the visibility of the search input
+                searchInput.classList.toggle("active");
+                header.classList.toggle("hide"); // Toggle the hide class on the header
+
+                // Clear the input field and reset highlighting when the search input is hidden
+                if (!searchInput.classList.contains("active")) {
+                    searchInput.value = "";
+                    removeHighlight();
+                }
+            });
+
+            searchInput.addEventListener("input", function () {
+                var keyword = searchInput.value.trim().toLowerCase(); // Get the keyword and convert to lowercase
+                var tagsToMatch = 'p, h1, h2, h3, h4, h5, h6, font, label';
+                var paragraphs = content.querySelectorAll(tagsToMatch); // Select all paragraphs within the content
+
+                // Remove previous highlighting before applying new highlighting
+                removeHighlight();
+
+                // If the search input is empty, do not highlight anything
+                if (!keyword) {
+                    return;
+                }
+
+                // Iterate through each paragraph to find matches and highlight them
+                paragraphs.forEach(function (paragraph) {
+                    var text = paragraph.textContent.toLowerCase();
+
+                    // Check if the keyword exists in the paragraph
+                    if (text.includes(keyword)) {
+                        // Create a regular expression with the keyword for global search
+                        var regex = new RegExp(keyword, "gi");
+                        // Replace the matched keyword with highlighted text
+                        paragraph.innerHTML = paragraph.innerHTML.replace(regex, '<span class="highlight">$&</span>');
+                    }
+                });
+            });
+
+            // Function to remove previous highlighting
+            function removeHighlight() {
+                var highlightedText = content.querySelectorAll(".highlight");
+                highlightedText.forEach(function (element) {
+                    element.outerHTML = element.innerHTML;
+                });
+            }
+        });
+        // End Search section 
+
+         // Start Search section in mobile header 
+         document.addEventListener("DOMContentLoaded", function () {
+            var searchIcon = document.getElementById("searchIcon");
+            var searchContainer = document.getElementById("searchContainer");
+
+            searchIcon.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+
+                // Toggle the visibility of the search bar
+                searchContainer.classList.toggle("active");
+
+                // Focus on the search input when it becomes visible
+                if (searchContainer.classList.contains("active")) {
+                    document.getElementById("searchInput").focus();
+                }
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            var searchInput = document.getElementById("searchInput");
+            var content = document.getElementById("content");
+
+            searchInput.addEventListener("input", function () {
+                var keyword = searchInput.value.trim().toLowerCase(); // Get the keyword and convert to lowercase
+                var tagsToMatch = 'p, h1, h2, h3, h4, h5, h6, font, label';
+                var paragraphs = content.querySelectorAll(tagsToMatch); // Select all paragraphs within the content
+
+                // Remove previous highlighting before applying new highlighting
+                removeHighlight();
+
+                // If the search input is empty, do not highlight anything
+                if (!keyword) {
+                    return;
+                }
+
+                // Iterate through each paragraph to find matches and highlight them
+                paragraphs.forEach(function (paragraph) {
+                    var text = paragraph.textContent.toLowerCase();
+
+                    // Check if the keyword exists in the paragraph
+                    if (text.includes(keyword)) {
+                        // Create a regular expression with the keyword for global search
+                        var regex = new RegExp(keyword, "gi");
+                        // Replace the matched keyword with highlighted text
+                        paragraph.innerHTML = paragraph.innerHTML.replace(regex, '<span class="highlight">$&</span>');
+                    }
+                });
+            });
+
+            // Function to remove previous highlighting
+            function removeHighlight() {
+                var highlightedText = content.querySelectorAll(".highlight");
+                highlightedText.forEach(function (element) {
+                    element.outerHTML = element.innerHTML;
+                });
+            }
+        });
+        // End Search section in mobile header 
+    </script>
+</body>
+
+</html>

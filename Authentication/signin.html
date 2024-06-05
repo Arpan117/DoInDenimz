@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOIN'DENIMZ | Sign in</title>
+    <link rel="fevicon icon" href="../img/doindenimz_fevicon.png" type="image/x-icon">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="container_login">
+        <div class="container_main_login">
+            <div class="container_main_login_logo">
+                <img src="../img/nav_logo2.png">
+            </div>
+            <div class="login_header">
+                <h2>Create an Account</h2>
+                <p>Your Personal details are safe, we will never share your information.</p>
+            </div>
+
+            <form id="signinform" class="form form_login" action="#" method="post" onsubmit="return validateForm()">
+                <div class="signin_name_div">
+                    <div class="signin_firstname_div">
+                        <label for="fname" class="form_login_label_name">First Name <span>*</span></label>
+                        <br>
+                        <span id="siginErrorfName" style="color:red; width:50%; font-size:small;"></span>
+                        <div class="form_login_input">
+                            <input type="text" id="fname" name="fname" placeholder="First Name">
+                        </div>
+
+                    </div>
+
+                    <div class="signin_firstname_div">
+                        <label for="lname" class="form_login_label_name">Last Name <span>*</span></label>
+                        <br>
+                        <span id="siginErrorlName" style="color:red; width:50%; font-size:small;"></span>
+                        <div class="form_login_input">
+                            <input type="text" id="lname" name="lname" placeholder="Last Name">
+                        </div>
+                    </div>
+                </div>
+
+                <label for="signinemail" class="form_login_label">Email <span>*</span></label>
+                <br>
+                <span id="siginErroremail" style="color:red; font-size:small;"></span>
+                <div class="form_login_input">
+                    <input type="email" id="signinemail" name="signinemail" placeholder="Enter your Email">
+                </div>
+
+                <label for="signinpassword" class="form_login_label">Password <span>*</span></label>
+                <br>
+                <span id="siginErrorpassword" style="color:red; font-size:small;"></span>
+                <div class="form_login_pass_input">
+                    <div class="input-container">
+                        <input type="password" id="signinpassword" name="signinpassword"
+                            placeholder="Enter your Password">
+                        <i class="fa-solid fa-eye-slash" id="signpasseyeicon"></i>
+                    </div>
+                </div>
+                <ul class="requirement-list">
+                    <li>
+                        <i class="fas fa-xmark"></i>
+                        <span>At least 8 characters length</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-xmark"></i>
+                        <span>At least 1 number (0...9)</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-xmark"></i>
+                        <span>At least 1 lowercase letter (a...z)</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-xmark"></i>
+                        <span>At least 1 special symbol (!...$)</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-xmark"></i>
+                        <span>At least 1 uppercase letter (A...Z)</span>
+                    </li>
+                    <br>
+                </ul>
+
+
+
+                <div class="signin_side_form_div">
+                    <input type="checkbox" class="sigin_condition_checkbox" id="signincheck" name="signincheck">
+                    <p>I have read and understand the <a href="#">Terms & Conditions</a> and <a href="#">Privacy
+                            Policy*</a>
+                    </p>
+                </div>
+
+                <div class="login_submit_button_div">
+                    <button type="submit" id="signinSubmit" class="submit">Create Account</button>
+                    <!-- <span></span> -->
+                </div>
+            </form>
+
+
+            <div class="footer">
+                <p>Already have an account ? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+
+        <div class="side">
+            <div class="side_logo">
+                <img src="../img/nav_logo2.png" alt="logo">
+            </div>
+            <div class="side_img">
+                <img src="../img/login_side2.png">
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <script src="" async defer></script>
+    <script>
+        $(document).ready(function () {
+            $('#signinSubmit').click(function (e) {
+                e.preventDefault(); // Prevent form submission
+
+                var isValid = true;
+
+                // Validate first name
+                var firstName = $('#fname').val().trim();
+                if (firstName === '') {
+                    $('#siginErrorfName').text('First name is required.');
+                    isValid = false;
+                } else if (!isValidName(firstName)) {
+                    $('#siginErrorfName').text('First name must contain only alphabets.');
+                    isValid = false;
+                } else {
+                    $('#siginErrorfName').text('');
+                }
+
+                // Validate last name
+                var lastName = $('#lname').val().trim();
+                if (lastName === '') {
+                    $('#siginErrorlName').text('Last name is required.');
+                    isValid = false;
+                } else if (!isValidName(lastName)) {
+                    $('#siginErrorlName').text('Last name must contain only alphabets.');
+                    isValid = false;
+                } else {
+                    $('#siginErrorlName').text('');
+                }
+
+                // Validate email
+                var email = $('#signinemail').val().trim();
+                if (email === '') {
+                    $('#siginErroremail').text('Email is required.');
+                    isValid = false;
+                } else if (!isValidEmail(email)) {
+                    $('#siginErroremail').text('Please enter a valid email address.');
+                    isValid = false;
+                } else {
+                    $('#siginErroremail').text('');
+                }
+
+                // Validate password
+                var password = $('#signinpassword').val().trim();
+                var uppercaseRegex = /[A-Z]/; // Regex for at least 1 uppercase letter
+                var specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/; // Regex for special characters
+                var isValid = true; // Assuming the input is initially valid
+
+                if (password === '') {
+                    $('#siginErrorpassword').text('Password is required.');
+                    isValid = false;
+                } else if (password.length < 8) {
+                    $('#siginErrorpassword').text('Password must be at least 8 characters long.');
+                    isValid = false;
+                } else if (!uppercaseRegex.test(password)) {
+                    $('#siginErrorpassword').text('Password must contain at least 1 uppercase letter.');
+                    isValid = false;
+                } else if (!specialCharRegex.test(password)) {
+                    $('#siginErrorpassword').text('Password must contain at least 1 special character.');
+                    isValid = false;
+                } else {
+                    $('#siginErrorpassword').text('');
+                }
+
+
+                // If all fields are valid, submit the form
+                if (isValid) {
+                    $('form').submit();
+                }
+            });
+
+            // Function to validate name format
+            function isValidName(name) {
+                return /^[a-zA-Z]+$/.test(name);
+            }
+
+            // Function to validate email format
+            function isValidEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+            }
+
+            //start new password show validation
+            $("#signpasseyeicon").click(function () {
+                let signpasswordeyeicon = $("#signinpassword");
+                if (signpasswordeyeicon.attr("type") === "password") {
+                    signpasswordeyeicon.attr("type", "text");
+                    $(this).removeClass("fa-eye-slash").addClass("fa-eye");
+                } else {
+                    signpasswordeyeicon.attr("type", "password");
+                    $(this).removeClass("fa-eye").addClass("fa-eye-slash");
+                }
+            });
+            //end new password show validation
+
+
+            //start password validation
+            const $passwordInput = $("#signinpassword");
+            const $requirementList = $(".requirement-list");
+
+            const requirements = [
+                { regex: /.{8,}/, index: 0 },
+                { regex: /[0-9]/, index: 1 },
+                { regex: /[a-z]/, index: 2 },
+                { regex: /[^A-Za-z0-9]/, index: 3 },
+                { regex: /[A-Z]/, index: 4 },
+            ];
+
+            // Hide the list initially
+            $requirementList.hide();
+
+            // Toggle the list when the input is clicked
+            $passwordInput.on("click", function () {
+                $requirementList.toggle();
+            });
+
+            // Check requirements on keyup
+            $passwordInput.on("keyup", function () {
+                requirements.forEach(item => {
+                    const isValid = item.regex.test($(this).val());
+                    const $requirementItem = $requirementList.find("li").eq(item.index);
+
+                    if (isValid) {
+                        $requirementItem.addClass("valid");
+                        $requirementItem.find("i").attr("class", "fas fa-check");
+                    } else {
+                        $requirementItem.removeClass("valid");
+                        $requirementItem.find("i").attr("class", "fas fa-xmark");
+                    }
+                });
+            });
+
+            // Hide the requirement list when clicking outside the input field and the list
+            $(document).on("click", function (event) {
+                if (
+                    !$(event.target).closest(".input-container").length &&
+                    !$(event.target).closest(".requirement-list").length
+                ) {
+                    $requirementList.hide();
+                }
+            });
+            //end password validation
+
+            //---------------start signin form data local storage----------
+            let signinform = document.getElementById("signinform");
+            document.getElementById("signinSubmit").addEventListener("click", (event) => {
+                event.preventDefault();
+
+                let signinfname = signinform.fname.value;
+                let signinlname = signinform.lname.value;
+                let signinemail = signinform.signinemail.value;
+                let signinpassword = signinform.signinpassword.value;
+                let signincheck = signinform.signincheck.value;
+                
+                var signinformdata = JSON.parse(localStorage.getItem("signinDetails")) ?? [];
+                signinformdata.push({
+                    'FirstName':signinfname,
+                    'LastName':signinlname,
+                    'Email':signinemail,
+                    'Password':signinpassword,
+                    'Terms&Condition':signincheck
+                });
+                localStorage.setItem("signinDetails",JSON.stringify(signinformdata))
+            });
+            //---------------end signin form data local storage----------
+        });
+    </script>
+</body>
+
+</html>

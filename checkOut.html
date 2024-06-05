@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOIN'DENIMZ | CHECK OUT</title>
+    <link rel="fevicon icon" href="./img/doindenimz_fevicon.png" type="image/x-icon">
+
+    <!-- Meta Tags - Description for Search Engine purposes -->
+    <meta name="description" content="Georapi creaction, jeans, Jeans pant">
+    <meta name="keywords" content="Jeans pant, jeans pant, Georapi creaction, georapi creation">
+
+    <!-- inter fonts online links from google-font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <div>
+        <div class="test">
+            <input type="checkbox" class="menu-toggle" id="menu-toggle">
+            <div class="mobile-bar">
+                <label for="menu-toggle" class="menu-icon">
+                    <span></span>
+                </label>
+            </div>
+
+            <header class="header">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="customeJeans.html">Custome Jeans</a></li>
+                        <li><a href="productPage.html">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="measurementGuide.html">Measurement Guide</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <div class="header_icons2">
+                            <a href="#" id="searchIcon"><img src="img/search_icon.png" alt="search icon"></a>
+                            <a href="profilePersonal.html"><img src="img/user_icon.png" alt="user icon"></a>
+                            <li class="active"><a href="cart.html"><img src="img/shopping-cart_icon.png" alt="shopping cart icon"></a></li>
+                        </div>
+                        <div id="searchContainer" class="search_container">
+                            <input type="text" id="searchInput" class="search_input" placeholder="Search">
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="header_icons">
+                <div class="search_header">
+                    <input type="text" id="search_input" placeholder="Search">
+                    <a href="#" id="search_icon"><img src="img/search_icon.png" alt="Search icon"></a>
+                </div>
+                <a href="profilePersonal.html"><img src="img/user_icon.png" alt="user icon"></a>
+                <a href="cart.html"><img src="img/shopping-cart_icon.png" alt="shopping cart icon"></a>
+            </div>
+
+            <a class="navbar-brand" href="index.html">
+                <img class="header_logo_long" src="img/Doin'Denimz_logo.png" alt="logo">
+                <img class="header_logo_small" src="img/mo_nav_logo.png" alt="logo">
+            </a>
+
+        </div>
+    </div>
+
+    <!-- end header -->
+
+    <main>
+        <div id="content">
+            <div class="checkout">
+                <div class="checkout_main">
+                    <div class="checkout1">
+                        <div class="checkout_progress_main">
+                            <div class="checkout_progress">
+                                <div class="checkout_progress_num checkout_progress_num_fill">1</div>
+                                <div class="checkout_progress_text">Delivery</div>
+                            </div>
+                            <div class="step_check"></div>
+                            <div class="checkout_progress">
+                                <div class="checkout_progress_num">2</div>
+                                <div class="checkout_progress_text">Payment</div>
+                            </div>
+                            <div class="step_check"></div>
+                            <div class="checkout_progress">
+                                <div class="checkout_progress_num">3</div>
+                                <div class="checkout_progress_text">Confirmation</div>
+                            </div>
+                        </div>
+
+                        <form id="checkOutForm" action="" method="post">
+                            <div class="checkout_delivery">
+                                <div class="checkout_delivery_title">
+                                    <h4>Select a Delivery Option</h4>
+                                </div>
+                                <div class="checkout_delivery_shipping">
+                                    <div class="checkout_delivery_shipping_box">
+                                        <div class="delivery_shipping_box_text">
+                                            <input type="radio" name="delivery_option" id="standard_shipping">
+                                            <label for="standard_shipping">Standard Shipping</label>
+                                        </div>
+                                        <div class="delivery_shipping_details">
+                                            <p>Standard delivery 3-5 working days</p>
+                                            <p>(free delivery over &#8377;30).</p>
+                                        </div>
+                                        <div class="delivery_shipping_price">
+                                            <p>Free</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="checkout_delivery_shipping">
+                                    <div class="checkout_delivery_shipping_box">
+                                        <div class="delivery_shipping_box_text">
+                                            <input type="radio" name="delivery_option" id="in_store_delivery">
+                                            <label for="in_store_delivery">In store delivery</label>
+                                        </div>
+                                        <div class="delivery_shipping_details">
+                                            <p>Standard delivery 3-5 working days</p>
+                                            <p>(free delivery over &#8377;30).</p>
+                                        </div>
+                                        <div class="delivery_shipping_price">
+                                            <p>Free</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="checkout_delivery">
+                                <div class="checkout_delivery_name_title">
+                                    <h4>Enter Your Details</h4>
+                                </div>
+                                <div class="checkout_delivery_name">
+                                    <div class="delivery_name_main">
+                                        <label for="checkOutfname" class="label_name">First Name*</label>
+                                        <span id="checkOutfnameError" style="color:red; font-size:small;"></span>
+                                        <div>
+                                            <input type="text" id="checkOutfname" name="checkOutfname"
+                                                placeholder="Enter your name">
+                                        </div>
+                                    </div>
+                                    <div class="delivery_name_main">
+                                        <label for="checkOutlname" class="label_name">Last Name*</label>
+                                        <span id="checkOutlnameError" style="color:red; font-size:small;"></span>
+                                        <div>
+                                            <input type="text" id="checkOutlname" name="checkOutlname"
+                                                placeholder="Enter your name">
+                                        </div>
+                                    </div>
+                                    <div class="delivery_name_main">
+                                        <label for="checkOutemail">Email*</label>
+                                        <span id="checkOutemailError" style="color:red; font-size:small;"></span>
+                                        <div>
+                                            <input type="email" id="checkOutemail" name="checkOutemail"
+                                                placeholder="Enter your Email">
+                                        </div>
+                                    </div>
+                                    <div class="delivery_name_main">
+                                        <label for="checkOutmono">Mobile Phone*</label>
+                                        <span id="checkOutmonoError" style="color:red; font-size:small;"></span>
+                                        <div>
+                                            <input type="text" id="checkOutmono" name="checkOutmono"
+                                                placeholder="Enter your Mo. No.">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkout_delivery">
+                                <div class="checkout_delivery_name_title">
+                                    <h4>Enter Your Address</h4>
+                                </div>
+                                <div class="checkout_delivery_name">
+                                    <div class="delivery_name_main_address">
+                                        <label for="checkOutaddress">Address*</label>
+                                        <span id="checkOutaddressError" style="color:red; font-size:small;"></span>
+                                        <div>
+                                            <input type="text" id="checkOutaddress" name="checkOutaddress"
+                                                placeholder="Enter your Address">
+                                        </div>
+                                    </div>
+                                    <div class="delivery_name_main">
+                                        <label for="checkOutcity">Town / City*</label>
+                                        <span id="checkOutcityError" style="color:red; font-size:small;"></span>
+                                        <div>
+                                            <input type="text" id="checkOutcity" name="checkOutcity"
+                                                placeholder="Enter your Town / City">
+                                        </div>
+                                    </div>
+                                    <div class="delivery_name_main">
+                                        <label for="checkOutregion">Region / Country*</label>
+                                        <span id="checkOutregionError" style="color:red; font-size:small;"></span>
+                                        <div>
+                                            <input type="text" id="checkOutregion" name="checkOutregion"
+                                                placeholder="Enter your Region / Country">
+                                        </div>
+                                    </div>
+                                    <div class="delivery_name_main">
+                                        <label for="checkOutpostcode">Postcode*</label>
+                                        <span id="checkOutpostcodeError" style="color:red; font-size:small;"></span>
+                                        <div>
+                                            <input type="text" id="checkOutpostcode" name="checkOutpostcode"
+                                                placeholder="Enter your Postcode">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="checkout_terms">
+                                <input type="checkbox" class="checkout_terms_checkbox" id="checkoutCheckbox"
+                                    name="checkoutCheckbox">
+                                <p>I have read and understand the <a href="#">Terms & Conditions</a> and <a
+                                        href="#">Privacy
+                                        Policy*</a></p>
+                            </div>
+                        </form>
+                    </div>
+
+
+                    <div class="checkout2">
+                        <div class="checkout2_title">
+                            <h4>Order Summary <span>(03)</span></h4>
+                        </div>
+
+                        <div class="checkout_summary_table">
+                            <div class="checkout_table_product">
+                                <div class="checkout_table_product_img">
+                                    <img src="./img/product_rewiew.png" alt="product">
+                                </div>
+                                <div class="checkout_table_product_details">
+                                    <p>Nicky Boyfriend Fit Low-Rise Jeans</p>
+                                    <p class="checkout_table_product_details_p2">Blue</p>
+                                    <div class="checkout_table_product">
+                                        <div class="checkout_table_product_price">
+                                            <p>Rs. 2,990</p>
+                                            <p>Rs. 3,990</p>
+                                            <span>-40%</span>
+                                        </div>
+                                        <div class="checkout_table_product_discount">
+                                            <button>Edit item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="checkout_table_product">
+                                <div class="checkout_table_product_img">
+                                    <img src="./img/product_rewiew.png" alt="product">
+                                </div>
+                                <div class="checkout_table_product_details">
+                                    <p>Nicky Boyfriend Fit Low-Rise Jeans</p>
+                                    <p class="checkout_table_product_details_p2">Blue</p>
+                                    <div class="checkout_table_product">
+                                        <div class="checkout_table_product_price">
+                                            <p>Rs. 2,990</p>
+                                            <p>Rs. 3,990</p>
+                                            <span>-40%</span>
+                                        </div>
+                                        <div class="checkout_table_product_discount">
+                                            <button>Edit item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="checkout_table_product">
+                                <div class="checkout_table_product_img">
+                                    <img src="./img/product_rewiew.png" alt="product">
+                                </div>
+                                <div class="checkout_table_product_details">
+                                    <p>Nicky Boyfriend Fit Low-Rise Jeans</p>
+                                    <p class="checkout_table_product_details_p2">Blue</p>
+                                    <div class="checkout_table_product">
+                                        <div class="checkout_table_product_price">
+                                            <p>Rs. 2,990</p>
+                                            <p>Rs. 3,990</p>
+                                            <span>-40%</span>
+                                        </div>
+                                        <div class="checkout_table_product_discount">
+                                            <button>Edit item</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </div>
+
+                        <div class="promo_code">
+                            <div class="cart_details_total">
+                                <div class="cart_product_total">
+                                    <h4>Subtotal: </h4>
+                                    <h4>Rs.2,990</h4>
+                                </div>
+                                <div class="cart_product_total_shipping">
+                                    <h4>Standard Shipping: </h4>
+                                    <h4>FREE</h4>
+                                </div>
+                                <hr>
+                                <div class="cart_product_total">
+                                    <h4>Total(vat. included): </h4>
+                                    <h4>Rs.2,990</h4>
+                                </div>
+                                <div class="cart_product_total_button">
+                                    <a href="payment.html">
+                                        <button id="checkOutProceesButton">Proceed To Checkout</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+
+    <footer>
+        <div class="top_footer">
+            <div class="top_footer1">Customize your lifestyle</div>
+            <div class="top_footer2">
+                <div class="top_footer21">
+                    <img src="img/call.png" alt="call icon">
+                    <p>Or contact us On +91 96380 14309
+                    </p>
+                </div>
+                <div class="top_footer22">
+                    <a href="#" class="footer_btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mid_footer">
+            <div class="mid_footer1">
+                <a href="index.html">
+                    <img src="img/Doin'Denimz_logo.png" alt="">
+                </a>
+                <p>
+                    Explore our diverse jeans collection, tailored to suit your lifestyle. Elevate your wardrobe with
+                    premium quality denim and make a statement. Customize your style today.
+                </p>
+                <div class="footer_icons">
+                    <div class="facebook">
+                        <a href="#" class="fa-brands fa-facebook-f"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#" class="fa-brands fa-twitter"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#" class="fa-brands fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mid_footer2">
+                <div class="mid_footer21">
+                    <ul>
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>MEN's STORE</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Jeans</a></li>
+                    </ul>
+                    <ul>
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>WOMEN's STORE</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Jeans</a></li>
+                    </ul>
+                </div>
+                <div class="mid_footer21">
+                    <ul>
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>COMPANY</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Perfect Fit Guarantee</a></li>
+                        <li><a href="#">Georapi Blog</a></li>
+                    </ul>
+                    <ul>
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>Support</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="contactUs.html">Contact us</a></li>
+                        <li><a href="#">Order fabric samples</a></li>
+                        <li><a href="#">Track order</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="last_footer">
+            <div class="last_footer_copy">
+                <p>© 2020 My Doin`Denimz Creation. all rights reserved.2021</p>
+            </div>
+            <div class="last_footer_privacy">
+                <a href="#">Privacy Policy</a>
+                <p> | </p>
+                <a href="#"> Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- end footer -->
+
+
+
+
+    <script>
+        // Function to validate first name field
+        function validateFirstName() {
+            var firstName = document.getElementById("checkOutfname").value;
+            var nameRegex = /^[a-zA-Z]+$/;
+
+            // Check if the name is empty
+            if (firstName.trim() === "") {
+                document.getElementById("checkOutfnameError").innerText = "First Name is required";
+                return;
+            }
+
+            // Check if the name contains only letters
+            if (!nameRegex.test(firstName)) {
+                document.getElementById("checkOutfnameError").innerText = "Only for Alphabet allowed";
+                return;
+            }
+
+            // Reset the error message if the name is valid
+            document.getElementById("checkOutfnameError").innerText = "";
+        }
+
+
+
+
+        // Function to validate last name field
+        function validateLastName() {
+            var lastName = document.getElementById("checkOutlname").value;
+            var nameRegex = /^[a-zA-Z]+$/; // Regular expression to match only uppercase and lowercase letters
+
+            // Check if the last name is empty
+            if (lastName.trim() === "") {
+                document.getElementById("checkOutlnameError").innerText = "Last Name is required";
+                return;
+            }
+
+            // Check if the last name contains only letters
+            if (!nameRegex.test(lastName)) {
+                document.getElementById("checkOutlnameError").innerText = "Only for Alphabet allowed";
+                return;
+            }
+
+            // Reset the error message if the last name is valid
+            document.getElementById("checkOutlnameError").innerText = "";
+        }
+
+
+
+        // Function to validate email field
+        function validateEmail() {
+            var email = document.getElementById("checkOutemail").value;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById("checkOutemailError").innerText = "Please enter a valid email address";
+            } else {
+                document.getElementById("checkOutemailError").innerText = "";
+            }
+        }
+
+        // Function to validate mobile phone field
+        function validateMobilePhone() {
+            var mobilePhone = document.getElementById("checkOutmono").value;
+
+            // Check if the mobile phone number is empty
+            if (mobilePhone.trim() === "") {
+                document.getElementById("checkOutmonoError").innerText = "Mobile number is required";
+                return;
+            }
+
+            var phoneRegex = /^\d{10}$/;
+            if (!phoneRegex.test(mobilePhone)) {
+                document.getElementById("checkOutmonoError").innerText = "Please enter a valid 10-digit mobile phone number";
+            } else {
+                document.getElementById("checkOutmonoError").innerText = "";
+            }
+        }
+
+
+        // Function to validate address field
+        function validateAddress() {
+            var address = document.getElementById("checkOutaddress").value;
+            if (address === "") {
+                document.getElementById("checkOutaddressError").innerText = "Address is required";
+            } else {
+                document.getElementById("checkOutaddressError").innerText = "";
+            }
+        }
+
+        // Function to validate city field
+        function validateCity() {
+            var city = document.getElementById("checkOutcity").value;
+            if (city === "") {
+                document.getElementById("checkOutcityError").innerText = "Town / City is required";
+            } else {
+                document.getElementById("checkOutcityError").innerText = "";
+            }
+        }
+
+        // Function to validate region field
+        function validateRegion() {
+            var region = document.getElementById("checkOutregion").value;
+            if (region === "") {
+                document.getElementById("checkOutregionError").innerText = "Region / Country is required";
+            } else {
+                document.getElementById("checkOutregionError").innerText = "";
+            }
+        }
+
+        // Function to validate postcode field
+        function validatePostcode() {
+            var postcodeInput = document.getElementById("checkOutpostcode");
+            var postcode = postcodeInput.value;
+
+            // Check if postcode is empty
+            if (postcode === "") {
+                document.getElementById("checkOutpostcodeError").innerText = "Postcode is required";
+            } else {
+                // Check if input contains non-numeric characters
+                if (!/^\d+$/.test(postcode)) {
+                    document.getElementById("checkOutpostcodeError").innerText = "Only numbers allowed";
+                } else {
+                    document.getElementById("checkOutpostcodeError").innerText = "";
+                }
+            }
+        }
+
+        // Attach input event listeners to first name, last name, email, mobile phone, address, city, region, and postcode fields
+        document.getElementById("checkOutfname").addEventListener("input", validateFirstName);
+        document.getElementById("checkOutlname").addEventListener("input", validateLastName);
+        document.getElementById("checkOutemail").addEventListener("input", validateEmail);
+        document.getElementById("checkOutmono").addEventListener("input", validateMobilePhone);
+        document.getElementById("checkOutaddress").addEventListener("input", validateAddress);
+        document.getElementById("checkOutcity").addEventListener("input", validateCity);
+        document.getElementById("checkOutregion").addEventListener("input", validateRegion);
+        document.getElementById("checkOutpostcode").addEventListener("input", validatePostcode);
+
+        // Attach click event listener to the "Proceed To Checkout" button
+        document.getElementById("checkOutProceesButton").addEventListener("click", function (event) {
+            // Validate first name, last name, email, mobile phone, address, city, region, and postcode fields
+            validateAddress();
+            validateCity();
+            validateRegion();
+            validatePostcode();
+            validateFirstName();
+            validateLastName();
+            validateEmail();
+            validateMobilePhone();
+
+            // Prevent form submission if any field is empty
+            if (document.getElementById("checkOutaddressError").innerText !== "" ||
+                document.getElementById("checkOutcityError").innerText !== "" ||
+                document.getElementById("checkOutregionError").innerText !== "" ||
+                document.getElementById("checkOutpostcodeError").innerText !== "" ||
+                document.getElementById("checkOutfnameError").innerText !== "" ||
+                document.getElementById("checkOutlnameError").innerText !== "" ||
+                document.getElementById("checkOutemailError").innerText !== "" ||
+                document.getElementById("checkOutmonoError").innerText !== "") {
+                event.preventDefault(); // Prevent form submission if validation fails
+            } else {
+                // If all fields are filled correctly, navigate to payment.html
+                window.location.href = "payment.html";
+            }
+        });
+
+        // -------------------------start check out form data local storage-------------------------
+
+        let form = document.getElementById("checkOutForm");
+        document.getElementById("checkOutProceesButton").addEventListener("click", (event) => {
+            event.preventDefault();
+
+            let checkstandardshipp = form.standard_shipping.value;
+            let checkstoredelivery = form.in_store_delivery.value;
+            let checkname = form.checkOutfname.value;
+            let checklname = form.checkOutlname.value;
+            let checkemail = form.checkOutemail.value;
+            let checkmono = form.checkOutmono.value;
+            let checkaddress = form.checkOutaddress.value;
+            let checkcity = form.checkOutcity.value;
+            let checkregion = form.checkOutregion.value;
+            let checkpostcode = form.checkOutpostcode.value;
+            let checkbox = form.checkoutCheckbox.value;
+
+            var checkoutdata = JSON.parse(localStorage.getItem("checkOutDetails")) ?? [];
+            checkoutdata.push({
+                'Standard Shipping': checkstandardshipp,
+                'Store Delivery': checkstoredelivery,
+                'First Name': checkname,
+                'Last Name': checklname,
+                'Email': checkemail,
+                'Mobile No.': checkmono,
+                'Address': checkaddress,
+                'City': checkcity,
+                'Region': checkregion,
+                'Postcode': checkpostcode,
+                'T&C': checkbox
+            });
+            localStorage.setItem("checkOutDetails", JSON.stringify(checkoutdata));
+        });
+
+
+
+        // -------------------------end check out form data local storage-------------------------
+
+
+        // Start Search section 
+        document.addEventListener("DOMContentLoaded", function () {
+            var searchInput = document.getElementById("search_input");
+            var searchIcon = document.getElementById("search_icon");
+            var content = document.getElementById("content");
+            var header = document.querySelector('.header'); // Selecting the header element
+
+            searchIcon.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+
+                // Toggle the visibility of the search input
+                searchInput.classList.toggle("active");
+                header.classList.toggle("hide"); // Toggle the hide class on the header
+
+                // Clear the input field and reset highlighting when the search input is hidden
+                if (!searchInput.classList.contains("active")) {
+                    searchInput.value = "";
+                    removeHighlight();
+                }
+            });
+
+            searchInput.addEventListener("input", function () {
+                var keyword = searchInput.value.trim().toLowerCase(); // Get the keyword and convert to lowercase
+                var tagsToMatch = 'p, h1, h2, h3, h4, h5, h6, font, label';
+                var paragraphs = content.querySelectorAll(tagsToMatch); // Select all paragraphs within the content
+
+                // Remove previous highlighting before applying new highlighting
+                removeHighlight();
+
+                // If the search input is empty, do not highlight anything
+                if (!keyword) {
+                    return;
+                }
+
+                // Iterate through each paragraph to find matches and highlight them
+                paragraphs.forEach(function (paragraph) {
+                    var text = paragraph.textContent.toLowerCase();
+
+                    // Check if the keyword exists in the paragraph
+                    if (text.includes(keyword)) {
+                        // Create a regular expression with the keyword for global search
+                        var regex = new RegExp(keyword, "gi");
+                        // Replace the matched keyword with highlighted text
+                        paragraph.innerHTML = paragraph.innerHTML.replace(regex, '<span class="highlight">$&</span>');
+                    }
+                });
+            });
+
+            // Function to remove previous highlighting
+            function removeHighlight() {
+                var highlightedText = content.querySelectorAll(".highlight");
+                highlightedText.forEach(function (element) {
+                    element.outerHTML = element.innerHTML;
+                });
+            }
+        });
+        // End Search section 
+
+         // Start Search section in mobile header 
+         document.addEventListener("DOMContentLoaded", function () {
+            var searchIcon = document.getElementById("searchIcon");
+            var searchContainer = document.getElementById("searchContainer");
+
+            searchIcon.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+
+                // Toggle the visibility of the search bar
+                searchContainer.classList.toggle("active");
+
+                // Focus on the search input when it becomes visible
+                if (searchContainer.classList.contains("active")) {
+                    document.getElementById("searchInput").focus();
+                }
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            var searchInput = document.getElementById("searchInput");
+            var content = document.getElementById("content");
+
+            searchInput.addEventListener("input", function () {
+                var keyword = searchInput.value.trim().toLowerCase(); // Get the keyword and convert to lowercase
+                var tagsToMatch = 'p, h1, h2, h3, h4, h5, h6, font, label';
+                var paragraphs = content.querySelectorAll(tagsToMatch); // Select all paragraphs within the content
+
+                // Remove previous highlighting before applying new highlighting
+                removeHighlight();
+
+                // If the search input is empty, do not highlight anything
+                if (!keyword) {
+                    return;
+                }
+
+                // Iterate through each paragraph to find matches and highlight them
+                paragraphs.forEach(function (paragraph) {
+                    var text = paragraph.textContent.toLowerCase();
+
+                    // Check if the keyword exists in the paragraph
+                    if (text.includes(keyword)) {
+                        // Create a regular expression with the keyword for global search
+                        var regex = new RegExp(keyword, "gi");
+                        // Replace the matched keyword with highlighted text
+                        paragraph.innerHTML = paragraph.innerHTML.replace(regex, '<span class="highlight">$&</span>');
+                    }
+                });
+            });
+
+            // Function to remove previous highlighting
+            function removeHighlight() {
+                var highlightedText = content.querySelectorAll(".highlight");
+                highlightedText.forEach(function (element) {
+                    element.outerHTML = element.innerHTML;
+                });
+            }
+        });
+        // End Search section in mobile header 
+
+    </script>
+</body>
+
+</html>

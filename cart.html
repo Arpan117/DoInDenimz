@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOIN'DENIMZ | CART</title>
+    <link rel="fevicon icon" href="./img/doindenimz_fevicon.png" type="image/x-icon">
+
+    <!-- Meta Tags - Description for Search Engine purposes -->
+    <meta name="description" content="Georapi creaction, jeans, Jeans pant">
+    <meta name="keywords" content="Jeans pant, jeans pant, Georapi creaction, georapi creation">
+
+    <!-- inter fonts online links from google-font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jquey cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- header -->
+
+    <div>
+        <div class="test">
+            <input type="checkbox" class="menu-toggle" id="menu-toggle">
+            <div class="mobile-bar">
+                <label for="menu-toggle" class="menu-icon">
+                    <span></span>
+                </label>
+            </div>
+
+            <header class="header">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="customeJeans.html">Custome Jeans</a></li>
+                        <li><a href="productPage.html">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="measurementGuide.html">Measurement Guide</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                        <div class="header_icons2">
+                            <a href="#" id="searchIcon"><img src="img/search_icon.png" alt="search icon"></a>
+                            <a href="profilePersonal.html"><img src="img/user_icon.png" alt="user icon"></a>
+                            <li class="active"><a href="cart.html"><img src="img/shopping-cart_icon.png" alt="shopping cart icon"></a></li>
+                        </div>
+                        <div id="searchContainer" class="search_container">
+                            <input type="text" id="searchInput" class="search_input" placeholder="Search">
+                        </div>
+                    </ul>
+                </nav>
+            </header>
+
+            <div class="header_icons">
+                <div class="search_header">
+                    <input type="text" id="search_input" placeholder="Search">
+                    <a href="#" id="search_icon"><img src="img/search_icon.png" alt="Search icon"></a>
+                </div>
+                <a href="profilePersonal.html"><img src="img/user_icon.png" alt="user icon"></a>
+                <a href="cart.html"><img src="img/shopping-cart_icon.png" alt="shopping cart icon"></a>
+            </div>
+
+            <a class="navbar-brand" href="index.html">
+                <img class="header_logo_long" src="img/Doin'Denimz_logo.png" alt="logo">
+                <img class="header_logo_small" src="img/mo_nav_logo.png" alt="logo">
+            </a>
+
+        </div>
+    </div>
+
+    <!-- end header -->
+
+    <main>
+        <div id="content">
+            <div class="cart_details">
+                <div class="cart_details_main">
+                    <div class="cart1">
+                        <div class="cart1_title">
+                            <h3>Cart <span>(1)</span></h3>
+                        </div>
+                        <div class="cart_table cart_table_mobile">
+                            <div class="cart_table_product">
+                                <p>1 Item</p>
+                            </div>
+                            <div class="cart_table_qtytotal">
+                                <div class="cart_table_quantity">
+                                    <p>Quantity</p>
+                                </div>
+                                <div class="cart_table_subtotal">
+                                    <p>Subtotal</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="cart_table">
+                            <div class="cart_table_product cart_table_heading_mobile">
+                                <p>1 Item</p>
+                            </div>
+                            <div class="cart_table_product ">
+                                <div class="cart_table_product_img">
+                                    <img src="./img/product_rewiew.png" alt="product">
+                                </div>
+                                <div class="cart_table_product_details">
+                                    <p>Nicky Boyfriend Fit Low-Rise Jeans</p>
+                                    <p class="cart_table_product_details_p2">Blue</p>
+                                    <div class="cart_table_product_edit">
+                                        <button class="editItemBtn">Edit item</button>
+                                        <button class="previewBtn">Preview</button>
+                                        <button class="removeItemBtn cart_table_product_edit_remove">Remove</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart_table_qtytotal">
+
+                                <div class="cart_table_quantity cart_table_heading_mobile ">
+                                    <p>Quantity</p>
+                                </div>
+                                <div class="cart_table_quantity">
+                                    <button class="quantityDecrementBtn"><img src="./img/minus.png"
+                                            alt="minus"></button>
+                                    <span class="quantity">1</span>
+                                    <button class="quantityIncrementBtn"><img src="./img/plus.png" alt="plus"></button>
+                                </div>
+                                <div class="cart_table_subtotal">
+                                    <div class="cart_table_subtotal cart_table_heading_mobile">
+                                        <p>Subtotal</p>
+                                    </div>
+                                    <div class="cart_table_subtotal_price">
+                                        <p class="subtotalPrice">Rs. 2,990</p>
+                                        <p class="originalPrice">Rs. 3,990</p>
+                                    </div>
+                                    <div class="cart_table_subtotal_discount">
+                                        <span class="cart_discount_badge">-40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="cart_table">
+                            <div class="cart_table_product cart_table_heading_mobile">
+                                <p>1 Item</p>
+                            </div>
+                            <div class="cart_table_product ">
+                                <div class="cart_table_product_img">
+                                    <img src="./img/product_rewiew.png" alt="product">
+                                </div>
+                                <div class="cart_table_product_details">
+                                    <p>Nicky Boyfriend Fit Low-Rise Jeans</p>
+                                    <p class="cart_table_product_details_p2">Blue</p>
+                                    <div class="cart_table_product_edit">
+                                        <button class="editItemBtn">Edit item</button>
+                                        <button class="previewBtn">Preview</button>
+                                        <button class="removeItemBtn cart_table_product_edit_remove">Remove</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart_table_qtytotal">
+
+                                <div class="cart_table_quantity cart_table_heading_mobile ">
+                                    <p>Quantity</p>
+                                </div>
+                                <div class="cart_table_quantity">
+                                    <button class="quantityDecrementBtn"><img src="./img/minus.png"
+                                            alt="minus"></button>
+                                    <span class="quantity">1</span>
+                                    <button class="quantityIncrementBtn"><img src="./img/plus.png" alt="plus"></button>
+                                </div>
+                                <div class="cart_table_subtotal">
+                                    <div class="cart_table_subtotal cart_table_heading_mobile">
+                                        <p>Subtotal</p>
+                                    </div>
+                                    <div class="cart_table_subtotal_price">
+                                        <p class="subtotalPrice">Rs. 2,990</p>
+                                        <p class="originalPrice">Rs. 3,990</p>
+                                    </div>
+                                    <div class="cart_table_subtotal_discount">
+                                        <span class="cart_discount_badge">-40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="cart2">
+                        <div class="cart1_title">
+                            <h3>Order Summary</h3>
+                        </div>
+                        <div class="summery_promo_code">
+                            <h4 class="summery_insert_promo_code">Insert a Promo Code</h4>
+                            <h4 class="summery_find_promo_code">Find Promo Code</h4>
+                        </div>
+                        <div class="summery_promo_input">
+                            <input type="text" id="promocode" name="promocode" placeholder="Enter promo code">
+                            <button type="button" id="promoaply">Apply</button>
+                        </div>
+                        <div class="cart_details_total">
+                            <div class="cart_product_total">
+                                <h4>Subtotal: </h4>
+                                <h4 id="subtotal">Rs. 2,990</h4>
+                            </div>
+                            <div class="cart_product_total_shipping">
+                                <h4>Standard Shipping: </h4>
+                                <h4>free</h4>
+                            </div>
+                            <hr>
+                            <div class="cart_product_total">
+                                <h4>Total(vat. included): </h4>
+                                <h4 id="total">Rs. 2,990</h4>
+                            </div>
+                            <div class="cart_product_total_button">
+                                <a href="checkOut.html">
+                                    <button>Proceed To Checkout</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="product_viewed">
+                    <div class="product_viewed_title">
+                        <h4>MOST POPULAR</h4>
+                    </div>
+                    <div class="product_viewed1 product_viewed_footer">
+                        <div class="product_viewed12">
+                            <img src="./img/pant11.png">
+                            <p>Bangalore Black power-Stretch Pants</p>
+                            <div class="future_img_div_font">
+                                <font>&#8377;430</font>
+                                <font class="discount">&#8377;770</font>
+                                <font class="discount_badge">-40%</font>
+                                <div class="future_img_div">
+                                    <a href="#" class="future_img_btn"><i class="fa-solid fa-pencil"></i></a>
+                                    <a href="#" class="future_img_btn">
+                                        <i class="fa-regular fa-heart future_img_btn_heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_viewed12">
+                            <img src="./img/pant7.png">
+                            <p>Bangalore Black power-Stretch Pants</p>
+                            <div class="future_img_div_font">
+                                <font>&#8377;430</font>
+                                <font class="discount">&#8377;770</font>
+                                <font class="discount_badge">-40%</font>
+                                <div class="future_img_div">
+                                    <a href="#" class="future_img_btn"><i class="fa-solid fa-pencil"></i></a>
+                                    <a href="#" class="future_img_btn">
+                                        <i class="fa-regular fa-heart future_img_btn_heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_viewed12">
+                            <img src="./img/pant16.png">
+                            <p>Bangalore Black power-Stretch Pants</p>
+                            <div class="future_img_div_font">
+                                <font>&#8377;430</font>
+                                <font class="discount">&#8377;770</font>
+                                <font class="discount_badge">-40%</font>
+                                <div class="future_img_div">
+                                    <a href="#" class="future_img_btn"><i class="fa-solid fa-pencil"></i></a>
+                                    <a href="#" class="future_img_btn">
+                                        <i class="fa-regular fa-heart future_img_btn_heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_viewed12">
+                            <img src="./img/3_1.png">
+                            <p>Bangalore Black power-Stretch Pants</p>
+                            <div class="future_img_div_font">
+                                <font>&#8377;430</font>
+                                <font class="discount">&#8377;770</font>
+                                <font class="discount_badge">-40%</font>
+                                <div class="future_img_div">
+                                    <a href="#" class="future_img_btn"><i class="fa-solid fa-pencil"></i></a>
+                                    <a href="#" class="future_img_btn">
+                                        <i class="fa-regular fa-heart future_img_btn_heart"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="top_footer">
+            <div class="top_footer1">Customize your lifestyle</div>
+            <div class="top_footer2">
+                <div class="top_footer21">
+                    <img src="img/call.png" alt="call icon">
+                    <p>Or contact us On +91 96380 14309
+                    </p>
+                </div>
+                <div class="top_footer22">
+                    <a href="#" class="footer_btn">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="mid_footer">
+            <div class="mid_footer1">
+                <a href="index.html">
+                    <img src="img/Doin'Denimz_logo.png" alt="logo">
+                </a>
+                <p>
+                    Explore our diverse jeans collection, tailored to suit your lifestyle. Elevate your wardrobe with
+                    premium quality denim and make a statement. Customize your style today.
+                </p>
+                <div class="footer_icons">
+                    <div class="facebook">
+                        <a href="#" class="fa-brands fa-facebook-f"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#" class="fa-brands fa-twitter"></a>
+                    </div>
+                    <div class="facebook">
+                        <a href="#" class="fa-brands fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mid_footer2">
+                <div class="mid_footer21">
+                    <ul>
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>MEN's STORE</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Jeans</a></li>
+                    </ul>
+                    <ul class="ml">
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>WOMEN's STORE</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Custom Jeans</a></li>
+                        <li><a href="#">Jeans</a></li>
+                    </ul>
+                </div>
+                <div class="mid_footer21">
+                    <ul>
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>COMPANY</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">Perfect Fit Guarantee</a></li>
+                        <li><a href="#">Georapi Blog</a></li>
+                    </ul>
+                    <ul>
+                        <div class="d-flex">
+                            <div class="footer_ul_line"></div>
+                            <p>Support</p>
+                        </div>
+                        <li><a href="#"></a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Order fabric samples</a></li>
+                        <li><a href="#">Track order</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="last_footer">
+            <div class="last_footer_copy">
+                <p>© 2020 My Georapi Creation. all rights reserved.2021</p>
+            </div>
+            <div class="last_footer_privacy">
+                <a href="#">Privacy Policy</a>
+                <p> | </p>
+                <a href="#"> Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // product in button hide show
+        $(document).ready(function () {
+            $(".img-wrapper").hover(
+                function () {
+                    $(this).find(".future_img_div_font").show();
+                },
+                function () {
+                    $(this).find(".future_img_div_font").hide();
+                }
+            );
+
+            // Add class to show buttons initially
+            $(".product_viewed12").addClass("show-buttons");
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const quantityDecrementBtns = document.querySelectorAll(".quantityDecrementBtn");
+            const quantityIncrementBtns = document.querySelectorAll(".quantityIncrementBtn");
+            const quantityElements = document.querySelectorAll(".quantity");
+            const subtotalElements = document.querySelectorAll(".subtotalPrice");
+            const originalPrices = document.querySelectorAll(".originalPrice");
+            const subtotalElement = document.getElementById("subtotal");
+            const totalElement = document.getElementById("total");
+
+            // Function to update subtotal and total prices
+            const updatePrices = () => {
+                let subtotal = 0;
+
+                // Calculate subtotal for each product
+                quantityElements.forEach((quantityElement, index) => {
+                    const quantity = parseInt(quantityElement.textContent);
+                    const originalPrice = parseFloat(originalPrices[index].textContent.replace("Rs. ", "").replace(",", ""));
+                    const discountedPrice = originalPrice * 0.6; // Assuming a 40% discount
+                    const productSubtotal = quantity * discountedPrice;
+                    subtotal += productSubtotal;
+                    subtotalElements[index].textContent = `Rs. ${productSubtotal.toFixed(2)}`;
+                });
+
+                // Update subtotal and total elements
+                subtotalElement.textContent = `Rs. ${subtotal.toFixed(2)}`;
+                totalElement.textContent = `Rs. ${subtotal.toFixed(2)}`;
+            };
+
+            // Function to handle quantity decrement
+            const handleDecrement = (index) => {
+                let quantity = parseInt(quantityElements[index].textContent);
+                if (quantity > 1) {
+                    quantity--;
+                    quantityElements[index].textContent = quantity;
+                    updatePrices();
+                }
+            };
+
+            // Function to handle quantity increment
+            const handleIncrement = (index) => {
+                let quantity = parseInt(quantityElements[index].textContent);
+                quantity++;
+                quantityElements[index].textContent = quantity;
+                updatePrices();
+            };
+
+            // Adding event listeners to decrement buttons
+            quantityDecrementBtns.forEach((btn, index) => {
+                btn.addEventListener("click", () => handleDecrement(index));
+            });
+
+            // Adding event listeners to increment buttons
+            quantityIncrementBtns.forEach((btn, index) => {
+                btn.addEventListener("click", () => handleIncrement(index));
+            });
+
+            // Initialize subtotal and total prices
+            updatePrices();
+        });
+
+        // Start Search section 
+        document.addEventListener("DOMContentLoaded", function () {
+            var searchInput = document.getElementById("search_input");
+            var searchIcon = document.getElementById("search_icon");
+            var content = document.getElementById("content");
+            var header = document.querySelector('.header'); // Selecting the header element
+
+            searchIcon.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+
+                // Toggle the visibility of the search input
+                searchInput.classList.toggle("active");
+                header.classList.toggle("hide"); // Toggle the hide class on the header
+
+                // Clear the input field and reset highlighting when the search input is hidden
+                if (!searchInput.classList.contains("active")) {
+                    searchInput.value = "";
+                    removeHighlight();
+                }
+            });
+
+            searchInput.addEventListener("input", function () {
+                var keyword = searchInput.value.trim().toLowerCase(); // Get the keyword and convert to lowercase
+                var tagsToMatch = 'p, h1, h2, h3, h4, h5, h6, font, label';
+                var paragraphs = content.querySelectorAll(tagsToMatch); // Select all paragraphs within the content
+
+                // Remove previous highlighting before applying new highlighting
+                removeHighlight();
+
+                // If the search input is empty, do not highlight anything
+                if (!keyword) {
+                    return;
+                }
+
+                // Iterate through each paragraph to find matches and highlight them
+                paragraphs.forEach(function (paragraph) {
+                    var text = paragraph.textContent.toLowerCase();
+
+                    // Check if the keyword exists in the paragraph
+                    if (text.includes(keyword)) {
+                        // Create a regular expression with the keyword for global search
+                        var regex = new RegExp(keyword, "gi");
+                        // Replace the matched keyword with highlighted text
+                        paragraph.innerHTML = paragraph.innerHTML.replace(regex, '<span class="highlight">$&</span>');
+                    }
+                });
+            });
+
+            // Function to remove previous highlighting
+            function removeHighlight() {
+                var highlightedText = content.querySelectorAll(".highlight");
+                highlightedText.forEach(function (element) {
+                    element.outerHTML = element.innerHTML;
+                });
+            }
+        });
+        // End Search section 
+
+         // Start Search section in mobile header 
+         document.addEventListener("DOMContentLoaded", function () {
+            var searchIcon = document.getElementById("searchIcon");
+            var searchContainer = document.getElementById("searchContainer");
+
+            searchIcon.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+
+                // Toggle the visibility of the search bar
+                searchContainer.classList.toggle("active");
+
+                // Focus on the search input when it becomes visible
+                if (searchContainer.classList.contains("active")) {
+                    document.getElementById("searchInput").focus();
+                }
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            var searchInput = document.getElementById("searchInput");
+            var content = document.getElementById("content");
+
+            searchInput.addEventListener("input", function () {
+                var keyword = searchInput.value.trim().toLowerCase(); // Get the keyword and convert to lowercase
+                var tagsToMatch = 'p, h1, h2, h3, h4, h5, h6, font, label';
+                var paragraphs = content.querySelectorAll(tagsToMatch); // Select all paragraphs within the content
+
+                // Remove previous highlighting before applying new highlighting
+                removeHighlight();
+
+                // If the search input is empty, do not highlight anything
+                if (!keyword) {
+                    return;
+                }
+
+                // Iterate through each paragraph to find matches and highlight them
+                paragraphs.forEach(function (paragraph) {
+                    var text = paragraph.textContent.toLowerCase();
+
+                    // Check if the keyword exists in the paragraph
+                    if (text.includes(keyword)) {
+                        // Create a regular expression with the keyword for global search
+                        var regex = new RegExp(keyword, "gi");
+                        // Replace the matched keyword with highlighted text
+                        paragraph.innerHTML = paragraph.innerHTML.replace(regex, '<span class="highlight">$&</span>');
+                    }
+                });
+            });
+
+            // Function to remove previous highlighting
+            function removeHighlight() {
+                var highlightedText = content.querySelectorAll(".highlight");
+                highlightedText.forEach(function (element) {
+                    element.outerHTML = element.innerHTML;
+                });
+            }
+        });
+        // End Search section in mobile header 
+    </script>
+
+</body>
+
+</html>
